@@ -12,14 +12,16 @@ btn.addEventListener('click', insertIn);
 function insertIn(event){
   event.preventDefault();
 
-  let genero = document.querySelector('[name="genero"]:checked').value;
+  let tipoTur = document.querySelector('[name="tipoTurismo"]:checked').value;
+
+  let nacInter = document.querySelector('[name="nacInter"]:checked').value;
 
   let li = document.createElement('li');
-  li.innerText = `Tipo de turismo: ${genero}; \n Destino: ${fieldTitle.value};\n Descrição: ${fieldDescription.value}`;
+  li.innerText = `Tipo de turismo: ${tipoTur};\n Viagem: ${nacInter}; \n Destino: ${fieldTitle.value};\n Descrição: ${fieldDescription.value}`;
   document.querySelector('ol').appendChild(li);
 
   document.querySelector('#btn').onclick = function(){
-    let radios = document.querySelector('#genero');
+    let radios = document.getElementsByName('genero');
     for(let i = 0; i < radios.clientHeight; i++){
       if (radios[i].checked){
         document.querySelector('ol').appendChild(radios);

@@ -150,6 +150,15 @@ input[type='reset'] {
   border: 1px solid rgba(255, 255, 255);
 }
 
+ol li{
+  width: 300px;
+  padding: 5px;
+}
+
+ol li img{
+  justify-content: center;
+}
+
 footer {
   padding: 20px;
   margin: 20px;
@@ -182,10 +191,19 @@ footer a:hover {
     padding: 25px 30px 25px;
   }
 
+  ol{
+    width: 395px;
+    margin: 5px auto;
+  }
+
   ol li {
-    width: 400px;
     margin: 0 auto;
     line-height: 1.5rem;
     font-size: 16px;
+
+  }
+  ol li img{
+    margin: 5px auto;
+    text-align: center;
   }
 }

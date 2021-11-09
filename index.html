@@ -1,110 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Checkpoint II</title>
-</head>
-<body>
-  <header>
-      <img src="./img/logo.svg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/620/620896.png"
+      type="image/x-icon"
+    />
+    <title>Bora viajar?</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo.svg" alt="logo" />
       <h1>Bora viajar?</h1>
-  </header>
-  <section class="container">
-    <main>
-      <h2>Mas não consegue decidir<br>para onde ir?</h2>
-      <p>Faça uma lista com tipo de turismo, destino, descrição e imagem...<br><br>Assim fica muito mais fácil de decidir.</p>
-      
-      <form>
-        <fieldset>
-          <legend>Tipo de turismo</legend>
+    </header>
+    <section class="container">
+      <main>
+        <h2>Mas não consegue decidir<br />para onde ir?</h2>
+        <p>
+          Faça uma lista com tipo de turismo, destino, descrição e imagem.<br /><br />Assim
+          fica muito mais fácil de escolher. Bora lá ...
+        </p>
+
+        <form>
+          <fieldset>
+            <legend>Tipo de turismo</legend>
             <div>
-              <input type="radio" name="tipoTurismo" id="aventura" value="Aventura e esporte">
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="aventura"
+                value="Aventura e esporte"
+              />
               <label for="aventura">Aventura e esporte</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="cultural" value="Cultural e gastronômico">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="cultural"
+                value="Cultural e gastronômico"
+              />
               <label for="cultural">Cultural e gastronômico</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="ecoturismo" value="Ecoturismo">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="ecoturismo"
+                value="Ecoturismo"
+              />
               <label for="ecoturismo">Ecoturismo</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="espiritual" value="Espiritual">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="espiritual"
+                value="Espiritual"
+              />
               <label for="espiritual">Espiritual</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="estudo" value="Estudo e Intercâmbio">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="estudo"
+                value="Estudo e Intercâmbio"
+              />
               <label for="estudo">Estudo e Intercâmbio</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="eventos" value="Eventos e negócios">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="eventos"
+                value="Eventos e negócios"
+              />
               <label for="eventos">Eventos e negócios</label>
             </div>
             <div>
-              <input type="radio" name="tipoTurismo" id="mochilao" value="Mochilão">
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="mochilao"
+                value="Mochilão"
+              />
               <label for="mochilao">Mochilão</label>
             </div>
-            <div>  
-              <input type="radio" name="tipoTurismo" id="sol" value="Sol e praia">
+            <div>
+              <input
+                type="radio"
+                name="tipoTurismo"
+                id="sol"
+                value="Sol e praia"
+              />
               <label for="sol">Sol e praia</label>
             </div>
-        </fieldset>
-        <br>
-        <fieldset class="nacInter">
-          <legend>Viagem</legend>
-          <input type="radio" name="nacInter" id="nacional" value="Nacional">
-          <label for="nacional">Nacional</label>
-          <input type="radio" name="nacInter" id="internacional" value="Internacional">
-          <label for="internacional">Internacional</label>
-        </fieldset>
-        <br>
+          </fieldset>
+          <br />
 
-        <div>
-          <label for="fieldTitle">Destino</label>
-          <input type="text" name="fieldTitle" id="fieldTitle" placeholder="Insira o destino" onfocus="this.value= '';">
-        </div>
+          <fieldset class="nacInter">
+            <legend>Viagem</legend>
+            <input
+              type="radio"
+              name="nacInter"
+              id="nacional"
+              value="Nacional"
+            />
+            <label for="nacional">Nacional</label>
+            <input
+              type="radio"
+              name="nacInter"
+              id="internacional"
+              value="Internacional"
+            />
+            <label for="internacional">Internacional</label>
+          </fieldset>
+          <br />
 
-        <br>
+          <fieldset class="passaporte">
+            <legend>Passaporte</legend>
+            <input
+              type="checkbox"
+              name="passaporte"
+              id="passaporte"
+              value="Precisa de passaporte"
+            />
+            <label for="passaporte"
+              >Marque se precisar de passaporte para essa viagem.</label
+            >
+          </fieldset>
+          <br />
 
-        <div>
-          <label for="fieldDescription">Descrição</label>
-          <input type="text" name="fieldDescription" id="fieldDescription" placeholder="Insira a descrição" onfocus="this.value='';">
-        </div>
-        <br>
+          <div>
+            <label for="fieldTitle">Destino</label>
+            <input
+              type="text"
+              name="fieldTitle"
+              id="fieldTitle"
+              placeholder="Insira o destino"
+              onfocus="this.value= '';"
+            />
+          </div>
 
-        <div>
-          <label for="URL da imagem">URL da imagem</label>
-        </div>
+          <br />
 
-        <div>
-          <input type="text" name="fieldUrl" id="fieldUrl" placeholder="Cole aqui a URL da imagem">
-        </div>
+          <div>
+            <label for="fieldDescription">Descrição</label>
+            <input
+              type="text"
+              name="fieldDescription"
+              id="fieldDescription"
+              placeholder="Insira a descrição"
+              onfocus="this.value='';"
+            />
+          </div>
+          <br />
 
-        <br>
+          <div>
+            <label for="URL da imagem">URL da imagem</label>
+          </div>
 
-        <div class="buttons">
-          <input type="submit" id="btn" value="Inserir na lista" class="button">
-        </div>
-        <div class="buttons">  
-          <input type="reset" id="reset" value="Limpar">
-        </div>
+          <div>
+            <input
+              type="text"
+              name="fieldUrl"
+              id="fieldUrl"
+              placeholder="Cole aqui a URL da imagem"
+            />
+          </div>
+
+          <br />
+
+          <div class="buttons">
+            <input
+              type="submit"
+              id="btn"
+              value="Inserir na lista"
+              class="button"
+            />
+          </div>
+          <div class="buttons">
+            <input type="reset" id="reset" value="Limpar" />
+          </div>
         </form>
-
-      <!-- <h2>Lista</h2> -->
-
-      <ol></ol>
-
-      <!-- <button id="remove" type="reset">Limpar lista</button> -->
-
-    </main>
-  </section>
-  <footer>
-    <a href="https://github.com/kari-osk" target="_blank">code by Karina Osuka</a>
+        <!-- Saída da lista ordenada -->
+        <ol></ol>
+      </main>
+    </section>
+    <footer>
+      <a href="https://github.com/kari-osk" target="_blank"
+        >code by Karina Osuka</a
+      >
     </footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

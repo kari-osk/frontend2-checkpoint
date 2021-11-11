@@ -1,7 +1,6 @@
 # frontend2-checkpoint
 Curso Certified Tech Developer.
 
-O primeiro checkpoint da matéria FrontEnd II, consisite em criar um formulário para que o usuário crie uma lista.
 =======
 Projeto do primeiro checkpoint da matéria FrontEnd II, consisite em criar um formulário para que o usuário crie uma lista. 
 O formulário deve ter pelo menos 4 campos: título, descrição, Url da imagem e um botão submit. 

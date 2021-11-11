@@ -3,7 +3,7 @@ let fieldDescription = document.querySelector('#fieldDescription')
 let fieldUrl = document.querySelector('#fieldUrl')
 let btn = document.querySelector('#btn')
 
-let remove = document.querySelector('#remove')
+// let remove = document.querySelector('#remove')
 
 let list = document.querySelector('ol')
 
